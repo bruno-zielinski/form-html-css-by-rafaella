@@ -1,4 +1,101 @@
 // IMPORTS STYLES
 @import 'reset';
 
-// STYLE FORM
+// GLOBAL STYLE
+
+body {
+  background-color: #f0f8ff;
+  font-size: 1rem;
+  color: #59429d;
+  margin-left: 36%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 0;
+}
+
+// FORM STYLE
+#title {
+  color: #380b61;
+  margin-left: 7%;
+}
+
+#subtitle {
+  color: #380b61;
+  margin-left: 10%;
+}
+
+.field {
+  margin-bottom: 1rem;
+
+  label {
+    margin-bottom: 0.2rem;
+    color: #59429d;
+    display: block;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  select,
+  textarea {
+    padding: 0.2rem;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+
+  select option {
+    padding-right: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    &:focus {
+      background-color: #e080f8;
+    }
+  }
+}
+
+fieldset {
+  &.group .field {
+    float: left;
+    margin-right: 1rem;
+  }
+}
+
+.button {
+  font-size: 1.2rem;
+  background-color: #59429d;
+  border: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    background-color: #ccbbff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: unset;
+  }
+}
+
+#check {
+  display: inline-block;
+}
